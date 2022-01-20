@@ -1,0 +1,7 @@
+{
+  "name": "scolartrackers",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
