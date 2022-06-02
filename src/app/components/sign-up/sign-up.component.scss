@@ -1,0 +1,76 @@
+
+
+div ion-text{
+
+  color: var(--fadeOrange) !important;
+}
+
+
+.draw-down{
+
+  min-height: 20vh;
+}
+
+
+.ion-margin-top h2{
+
+  margin-top: 8rem !important;
+}
+
+
+
+
+.ion-margin-top div{
+
+  margin-top: 3rem !important;
+}
+
+
+ion-label div{
+
+ margin-bottom: .5rem;
+
+}
+
+
+ion-label p a{
+
+  list-style: none;
+  text-decoration: none;
+
+}
+
+
+
+ion-label p a span{
+
+color: #444;
+
+}
+
+
+
+a{
+
+  list-style: none;
+  text-decoration: none;
+  color: #f96d01 !important;
+
+}
+
+
+.img{
+
+  margin: auto 230px;
+}
+
+
+@media (max-width:678px) {
+
+
+  .img{
+
+    margin: auto 120px;
+  }
+
+}

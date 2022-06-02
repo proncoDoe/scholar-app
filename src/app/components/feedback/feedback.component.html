@@ -1,0 +1,278 @@
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="3">
+
+
+
+        <ion-card>
+          <ion-card-content>
+
+
+            <ion-col>
+              <h1 color class="ion-text-capitalize">hello nikita</h1>
+            </ion-col>
+
+
+
+            <ion-col class="ion-margin-top">
+              <h1> <span class="ion-text-uppercase">feedback </span> <small> is a <small class="ion-text-capitalize">gift</small></small></h1>
+            </ion-col>
+
+
+            <ion-col class="ion-text-lg-capitalize ion-margin-top">
+
+              <div>
+                <p>it will be much appreciated if</p>
+                <p>you kindly write a honest</p>
+                <p>feedback.</p>
+              </div>
+
+            </ion-col>
+
+              <div class="draw-down"></div>
+
+            <ion-footer class=" ion-no-border">
+
+
+
+                  <ion-col>
+                    <h1 color>Scholar Tracker</h1>
+
+                  </ion-col>
+
+
+            </ion-footer>
+
+          </ion-card-content>
+            </ion-card>
+
+
+      </ion-col>
+
+
+
+   <ion-col  size-md="7" offset-md="1">
+
+
+             <ion-row>
+
+              <ion-col size-md="12">
+
+
+                <ion-card class="ion-padding-top">
+
+
+                  <div class="ion-text-center">
+
+
+                    <ion-label class="ion-text-lg-capitalize" color="primary">
+                          <h1>feedback</h1>
+
+                        </ion-label>
+
+
+                  </div>
+
+
+                  <ion-card-content>
+                    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+
+                <ion-item>
+
+                  <ion-row>
+
+                    <ion-col size="1">
+
+                      <i class="fas fa-dot-circle"></i>
+
+                    </ion-col>
+
+                  </ion-row>
+
+                  <ion-label position="floating" class="ion-text-capitalize">did you find google drive interesting, why ?</ion-label>
+                  <ion-input type="text" [(ngModel)]="feedback.interesting1" name="interesting1" required></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="password" [(ngModel)]="feedback.interesting2"  name="interesting2" required></ion-input>
+                </ion-item>
+
+                <ion-item>
+
+                  <ion-row>
+
+                    <ion-col size="3">
+
+                      <i class="fas fa-dot-circle"></i>
+
+                    </ion-col>
+
+                  </ion-row>
+
+                  <ion-label position="floating" class="ion-text-capitalize">what was your favorite topic on google drive ?</ion-label>
+                  <ion-input type="text" [(ngModel)]="feedback.favorite1" name="favorite1" required></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="password" [(ngModel)]="feedback.favorite2"  name="favorite2" required></ion-input>
+                </ion-item>
+
+
+               <div class="row">
+
+                <div class="col-md-5">
+
+
+                <h2 class="ion-text-capitalize my-3">will you recommend google drive to a friend ?</h2>
+
+                  <div class="mt-5 ">
+
+                  <span class="form-group">
+
+                    <ion-label color="primary">Yes</ion-label>&nbsp;
+                    <input type="radio" name="recommend">
+                    &nbsp;
+                    <ion-label color="primary">No</ion-label>&nbsp;
+                    <input type="radio" name="recommend">
+
+                    &nbsp;
+                    <ion-label color="primary">Maybe</ion-label>&nbsp;
+                    <input type="radio" name="recommend">
+
+
+                  </span>
+
+                  </div>
+
+
+                </div>
+               </div>
+
+
+
+               <ion-row>
+                 <ion-col size="3">
+
+                  <ion-item lines="none">
+
+                  </ion-item>
+
+                 </ion-col>
+
+                 <ion-col size="7">
+
+                  <h2 class="ion-text-capitalize text-rate">rate this course ?</h2>
+
+                  <ion-row>
+
+                    <div class="col-md-3 col-sm-12">
+
+                      <ion-text>very poor</ion-text>
+
+                    </div>
+
+                    <div class="col-md-5 col-sm-12">
+
+                      <h1><span>1</span>&nbsp;<span>2</span>&nbsp; <span> 3 </span>&nbsp;<span>4</span>&nbsp;<span>5</span></h1>
+
+
+                      <span class="form-group">
+
+                        <input type="radio" name="rate" value="1">
+
+                        &nbsp;
+                        <input type="radio" name="rate" value="2">
+
+                        &nbsp;
+                        <input type="radio" name="rate" value="3">
+
+                        &nbsp;
+                        <input type="radio" class="form-checsk-input" name="rate" value="4">
+
+
+
+                        &nbsp;
+                        <input type="radio" name="rate" value="5">
+
+
+                      </span>
+
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                      excellent
+                    </div>
+
+                  </ion-row>
+
+
+                </ion-col>
+
+                <div class="col-md-2">
+
+                  <ion-item lines="none">
+
+                  </ion-item>
+
+                 </div>
+
+               </ion-row>
+
+
+
+               <div class="row">
+
+                <div class="col-md-5">
+
+                  <ion-item>
+
+                  </ion-item>
+
+                 </div>
+
+                  <ion-col>
+
+                    <div class="align-items-center justify-content-center text-center">
+                      <ion-button class="shadow-lg" type="submit" color="primary">
+                        Submit
+                      </ion-button>
+                    </div>
+
+                  </ion-col>
+
+
+                  <div class="col-md-2">
+
+                    <ion-item>
+
+                    </ion-item>
+
+                   </div>
+
+               </div>
+
+                    </form>
+                  </ion-card-content>
+                    </ion-card>
+
+
+              </ion-col>
+
+
+             </ion-row>
+
+
+
+    </ion-col>
+
+      </ion-row>
+      </ion-grid>
+      </ion-content>
+
+
+

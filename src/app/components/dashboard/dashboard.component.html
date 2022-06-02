@@ -1,0 +1,562 @@
+
+<ion-header>
+  <!-- <ion-nav > -->
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="end">
+
+    <!-- <ion-menu-button menuId="m1"></ion-menu-button> -->
+
+    <ion-menu-button menuId="first"></ion-menu-button>
+
+    <!-- <ion-button (click)="onOpenMenu()">
+      Open
+    </ion-button> -->
+
+    </ion-buttons>
+
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+<!-- </ion-nav> -->
+</ion-header>
+
+
+
+<ion-content fxLayout="row">
+
+  <div class="ion-text-center ion-margin-top">
+
+
+    <ion-label class="ion-text-lg-capitalize" color="primary">
+          <h1>Over view</h1>
+
+        </ion-label>
+
+  </div>
+
+  <div class="ion-text-left title-ml">
+
+    <ion-label class="ion-text-lg-capitalize" color="tertiary">
+          <h1>Course</h1>
+
+        </ion-label>
+
+  </div>
+
+  <section class="testimonials my-5">
+    <swiper [config]="swiperConfig"
+            class="container">
+
+      <h3 class="text-center">Testimonials</h3>
+      <ng-template swiperSlide>
+      <ion-card>
+
+        <ion-card-header color="tertiary">
+          <ion-card-title>Student 1</ion-card-title>
+        </ion-card-header>
+
+        <ion-item href="#" class="ion-activated">
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>ion-item in a card, icon left, button right</ion-label>
+          <ion-button fill="outline" slot="end">View</ion-button>
+        </ion-item>
+
+
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+
+        <ion-row>
+
+          <ion-col size="5">
+
+            <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+            quesition & answer
+            </ion-item>
+        </ion-col>
+
+        <ion-col size="5" class="ml-5">
+            <ion-item routerLink="/feedback" lines="none" class="text-primary ml-3 ion-text-capitalize">
+             feedback
+            </ion-item>
+        </ion-col>
+
+      </ion-row>
+
+      </ion-card>
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <ion-card>
+
+        <ion-card-header color="tertiary">
+          <ion-card-title>Student 2</ion-card-title>
+        </ion-card-header>
+
+        <ion-item href="#" class="ion-activated">
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>ion-item in a card, icon left, button right</ion-label>
+          <ion-button fill="outline" slot="end">View</ion-button>
+        </ion-item>
+
+
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+
+        <ion-row>
+
+          <ion-col size="5">
+
+            <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+            quesition & answer
+            </ion-item>
+        </ion-col>
+
+        <ion-col size="5" class="ml-5">
+            <ion-item routerLink="/feedback" lines="none" class="text-primary ml-3 ion-text-capitalize">
+             feedback
+            </ion-item>
+        </ion-col>
+
+      </ion-row>
+
+      </ion-card>
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <ion-card>
+
+        <ion-card-header color="tertiary">
+          <ion-card-title>Student 3</ion-card-title>
+        </ion-card-header>
+
+        <ion-item href="#" class="ion-activated">
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>ion-item in a card, icon left, button right</ion-label>
+          <ion-button fill="outline" slot="end">View</ion-button>
+        </ion-item>
+
+
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+
+        <ion-row>
+
+          <ion-col size="5">
+
+            <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+            quesition & answer
+            </ion-item>
+        </ion-col>
+
+        <ion-col size="5" class="ml-5">
+            <ion-item routerLink="/feedback" lines="none" class="text-primary ml-3 ion-text-capitalize">
+             feedback
+            </ion-item>
+        </ion-col>
+
+      </ion-row>
+
+      </ion-card>
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <ion-card>
+
+        <ion-card-header color="tertiary">
+          <ion-card-title>Student 4</ion-card-title>
+        </ion-card-header>
+
+        <ion-item href="#" class="ion-activated">
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>ion-item in a card, icon left, button right</ion-label>
+          <ion-button fill="outline" slot="end">View</ion-button>
+        </ion-item>
+
+
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+
+        <ion-row>
+
+          <ion-col size="5">
+
+            <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+            quesition & answer
+            </ion-item>
+        </ion-col>
+
+        <ion-col size="5" class="ml-5">
+            <ion-item routerLink="/feedback" lines="none" class="text-primary ml-3 ion-text-capitalize">
+             feedback
+            </ion-item>
+        </ion-col>
+
+      </ion-row>
+
+      </ion-card>
+    </ng-template>
+
+    </swiper>
+
+  </section>
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col size-md="4" offset-md="3"> -->
+<!--
+  <ion-slides pager="true" [options]="slideOpts"  fxLayout.sm="column" fxLayout.gt-xs="column">
+    <ion-slide>
+      <ion-card>
+        <ion-card-header color="tertiary">
+          <ion-card-title>Student 1</ion-card-title>
+        </ion-card-header>
+
+        <ion-item href="#" class="ion-activated">
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>ion-item in a card, icon left, button right</ion-label>
+          <ion-button fill="outline" slot="end">View</ion-button>
+        </ion-item>
+
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+
+
+      <ion-row>
+
+          <ion-col size="5">
+
+            <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+            quesition & answer
+            </ion-item>
+        </ion-col>
+
+        <ion-col size="5" class="ml-5">
+            <ion-item routerLink="/feedback" lines="none" class="text-primary ml-5 ion-text-capitalize">
+             feedback
+            </ion-item>
+        </ion-col>
+
+      </ion-row>
+
+
+      </ion-card>
+
+
+    </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header color="tertiary">
+            <ion-card-title>Student 2</ion-card-title>
+          </ion-card-header>
+
+          <ion-item href="#" class="ion-activated">
+            <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+
+          <ion-row>
+
+            <ion-col size="5">
+
+              <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+              quesition & answer
+              </ion-item>
+          </ion-col>
+
+          <ion-col size="5" class="ml-5">
+              <ion-item routerLink="/feedback" lines="none" class="text-primary ml-5 ion-text-capitalize">
+               feedback
+              </ion-item>
+          </ion-col>
+
+        </ion-row>
+        </ion-card>
+
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header color="tertiary">
+            <ion-card-title>Student 3</ion-card-title>
+          </ion-card-header>
+
+          <ion-item href="#" class="ion-activated">
+            <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+
+          <ion-row>
+
+            <ion-col size="5">
+
+              <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+              quesition & answer
+              </ion-item>
+          </ion-col>
+
+          <ion-col size="5" class="ml-5">
+              <ion-item routerLink="/feedback" lines="none" class="text-primary ml-5 ion-text-capitalize">
+               feedback
+              </ion-item>
+          </ion-col>
+
+        </ion-row>
+        </ion-card>
+
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header color="tertiary">
+            <ion-card-title>Student 4</ion-card-title>
+          </ion-card-header>
+
+          <ion-item href="#" class="ion-activated">
+            <ion-icon name="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+
+          <ion-row>
+
+            <ion-col size="5">
+
+              <ion-item routerLink="/faq" lines="none" class="text-primary ion-text-capitalize">
+              quesition & answer
+              </ion-item>
+          </ion-col>
+
+          <ion-col size="5" class="ml-5">
+              <ion-item routerLink="/feedback" lines="none" class="text-primary ml-5 ion-text-capitalize">
+               feedback
+              </ion-item>
+          </ion-col>
+
+        </ion-row>
+        </ion-card>
+
+      </ion-slide>
+
+
+  </ion-slides> -->
+
+  <!-- </ion-col>
+  </ion-row>
+  </ion-grid> -->
+
+
+
+
+
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col size="12">
+
+        <div class="ion-text-left  ml">
+
+          <ion-label class="ion-text-lg-capitalize" color="tertiary">
+                <h1 class="ion-text-uppercase">attendance</h1>
+
+              </ion-label>
+
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row class="progress-bar-row">
+      <ion-col size-md="8" offset-md="3">
+
+        <ion-row>
+
+
+          <ion-col size="10">
+
+            <ion-label class="ion-text-xl-uppercase ion-text-lg-uppercase ion-text-sm-capitalize ion-text-md-capitalize" color="primary">
+              <h1>total number of weeks</h1>
+
+            </ion-label>
+
+
+       </ion-col>
+
+       <ion-col size="2" class="ion-padding-vertical">
+
+         <ion-label class="ion-text-lg-capitalize" color="primary">
+           <h1>27</h1>
+
+         </ion-label>
+
+       </ion-col>
+
+          <ion-col size="10">
+
+            <ion-label class="ion-text-uppercase" color="primary">
+              <h3>numbers of weeks</h3>
+
+            </ion-label>
+               <ion-tab-bar >
+
+                <!-- <ion-button expand="Full" color="tertiary" shape="round" size="large">Block Button</ion-button>
+                  <ion-progress-bar value={{progress}} color="light" class="ion-padding"></ion-progress-bar> -->
+
+                  <p>{{ progress }}</p>
+
+                  <ion-progress-bar   [value]="progress" mode="determinate" reversed="true" buffer="0.5" (click)="onStop()" (dblclick)="onContnou()"   color="tertiary" class="ion-padding"></ion-progress-bar>
+
+
+
+                </ion-tab-bar>
+
+
+
+
+          </ion-col>
+
+
+
+          <ion-col size="2" class="ion-padding-vertical">
+
+            <ion-label class="ion-text-uppercase" color="primary">
+              <h3>weeks</h3>
+
+            </ion-label>
+
+            <ion-button color="tertiary">
+
+              <ion-item>
+                <ion-badge slot="start" color="tertiary">27</ion-badge>
+
+              </ion-item>
+
+            </ion-button>
+
+          </ion-col>
+
+
+
+          <ion-col size="10">
+
+            <ion-label class="ion-text-uppercase" color="primary">
+              <h3>number of days present</h3>
+
+            </ion-label>
+
+            <ion-tab-bar>
+
+              <p>{{ progress2 }}</p>
+
+
+               <ion-progress-bar   [value]="progress2" mode="determinate" reversed="true" buffer="3.5" (click)="onStop()" (dblclick)="onContnou2()"   color="tertiary"  class="ion-padding"></ion-progress-bar>
+
+             </ion-tab-bar>
+
+
+       </ion-col>
+
+
+       <ion-col size="2">
+
+        <ion-label class="ion-text-uppercase" color="primary">
+          <h3>days</h3>
+
+        </ion-label>
+
+         <ion-button color="tertiary">
+
+           <ion-item>
+             <ion-badge slot="start" color="tertiary">35</ion-badge>
+
+           </ion-item>
+
+         </ion-button>
+
+       </ion-col>
+
+
+
+       <ion-col size="10">
+
+        <ion-label class="ion-text-uppercase" color="primary">
+          <h3>minimum number of days absent</h3>
+
+        </ion-label>
+
+        <ion-tab-bar>
+
+          <p>{{ progress3 }}</p>
+           <ion-progress-bar    [value]="progress3" type="determinate" reversed="true" buffer="3.5" (click)="onStop()" (dblclick)="onContnou3()"  color="tertiary" class="ion-padding"></ion-progress-bar>
+
+         </ion-tab-bar>
+
+
+   </ion-col>
+
+
+   <ion-col size="2">
+
+     <ion-button color="tertiary">
+
+       <ion-item>
+         <ion-badge slot="start" color="tertiary">5</ion-badge>
+
+       </ion-item>
+
+     </ion-button>
+
+   </ion-col>
+
+
+
+        </ion-row>
+
+
+
+
+ </ion-col>
+  </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+
+
+
+
+

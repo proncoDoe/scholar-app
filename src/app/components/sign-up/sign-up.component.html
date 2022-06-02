@@ -1,0 +1,282 @@
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="3">
+
+
+        <ion-card>
+
+
+
+          <ion-card-content>
+
+
+            <ion-col>
+              <h1 color>Scholar Tracker</h1>
+            </ion-col>
+
+
+
+            <ion-col class="ion-text-lg-capitalize ion-margin-top">
+              <h2>Access your class activities</h2>
+            </ion-col>
+
+
+            <ion-col class="ion-text-lg-capitalize ion-margin-top">
+
+              <div>
+                <p>keep tracker of attendance</p>
+                <p>tracker your class performance</p>
+                <p>have unlimited access to teachers <br /> resources</p>
+              </div>
+
+            </ion-col>
+
+              <div class="draw-down"></div>
+
+            <ion-footer class=" ion-no-border">
+
+                <ion-item lines="none" button class="ion-padding-vertical">
+
+                  <ion-col>
+                    <h3 color>Get Started</h3>
+                    <span><a routerLink="/login">Aready have an Account? Sign In ?</a>  </span>
+
+
+                  </ion-col>
+
+                </ion-item>
+            </ion-footer>
+
+          </ion-card-content>
+            </ion-card>
+
+
+      </ion-col>
+
+
+
+   <ion-col  size-md="6">
+
+
+             <ion-row>
+
+              <ion-col size-md="9" offset-md="3">
+
+
+                <ion-card class="ion-padding-top">
+
+
+                  <div class="ion-text-center">
+
+                    <ion-label class="ion-text-lg-capitalize" >
+
+                          <ion-avatar class="img-fluid img-thumbnail img rounded-circle">
+                     <img src="../../../assets/images/avatar.png">
+                      </ion-avatar>
+
+                        </ion-label>
+
+                  </div>
+
+
+                  <div class="ion-text-center">
+
+
+                    <ion-label class="ion-text-lg-capitalize" color="primary">
+                          <h1>Get started now</h1>
+
+                        </ion-label>
+
+
+                  </div>
+
+
+                  <ion-card-content>
+                    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+                <ion-row>
+
+                  <ion-col>
+
+
+                    <ion-item>
+                      <ion-label position="floating"> First name</ion-label>
+                      <ion-input type="text" [(ngModel)]="signUpform.firstName" name="firstName" #firstNameCtrl="ngModel" required></ion-input>
+                    </ion-item>
+
+                    <ion-item lines="none">
+
+                      <p class="tag text-danger" *ngIf="!firstNameCtrl.valid && firstNameCtrl.touched">First name field is required.</p>
+
+                    </ion-item>
+
+                  </ion-col>
+
+
+                  <ion-col>
+
+                    <ion-item>
+                      <ion-label position="floating">Surname</ion-label>
+                      <ion-input type="text" [(ngModel)]="signUpform.surName" name="surname" #secondNameCtrl="ngModel" required></ion-input>
+                    </ion-item>
+
+                    <ion-item lines="none">
+
+                      <p class="tag text-danger" *ngIf="!secondNameCtrl.valid && secondNameCtrl.touched">Second name field is required.</p>
+
+                    </ion-item>
+
+                  </ion-col>
+
+                  <ion-col>
+
+                    <ion-item>
+                      <ion-label position="floating">other name</ion-label>
+                      <ion-input type="text" [(ngModel)]="signUpform.lastName" name="othername" #otherNameCtrl="ngModel" required></ion-input>
+                    </ion-item>
+
+                    <ion-item lines="none">
+
+                      <p class="tag text-danger" *ngIf="!otherNameCtrl.valid && otherNameCtrl.touched">Other name field is required.</p>
+
+                    </ion-item>
+
+                  </ion-col>
+
+                </ion-row>
+
+
+                <ion-list>
+                  <ion-radio-group value="biff">
+                    <ion-list-header>
+                      <ion-label>Name</ion-label>
+                    </ion-list-header>
+
+                    <ion-row>
+
+
+                        <ion-col>
+
+                          <ion-item lines="none">
+                            <ion-label>Male</ion-label>
+                            <ion-checkbox  type="checkbox" [(ngModel)]='signUpform.male'  name="male" #male value="M" slot="start"></ion-checkbox>
+                          </ion-item>
+
+
+                        </ion-col>
+
+
+
+                        <ion-col>
+
+
+                    <ion-item lines="none">
+                      <ion-label>Female</ion-label>
+                      <ion-checkbox type="checkbox"  [(ngModel)]='signUpform.female' name="female"  #female  value="F" slot="start"></ion-checkbox>
+                    </ion-item>
+
+                        </ion-col>
+
+
+                    </ion-row>
+
+
+                  </ion-radio-group>
+                </ion-list>
+
+
+
+                <ion-row>
+
+                  <!-- <ion-list>Date of Birth</ion-list> -->
+
+
+                  <ion-col>
+
+                    <ion-item lines="none">
+                      <input [(ngModel)]="signUpform.date"  type="date" class="form-control"  name="date"  displayFormat="mm/dd/YYYY" placeholder="Date" min="1981">
+                    </ion-item>
+
+                  </ion-col>
+
+
+                </ion-row>
+
+
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input type="text" [(ngModel)]="signUpform.email" name="email" #emailNameCtrl="ngModel" required></ion-input>
+                </ion-item>
+
+                <ion-item lines="none">
+
+                  <p class="tag text-danger" *ngIf="!emailNameCtrl.valid && emailNameCtrl.touched">Should be a valid email address.</p>
+
+                </ion-item>
+
+                <ion-item>
+                  <ion-label position="floating">Create Password</ion-label>
+                  <ion-input type="password" [(ngModel)]="signUpform.password"  name="password" #passwordCtrl="ngModel" required></ion-input>
+                </ion-item>
+
+                <ion-item lines="none">
+
+                  <p class="tag text-danger" *ngIf="!passwordCtrl.valid && passwordCtrl.touched">Password field required.</p>
+
+                </ion-item>
+
+
+                <ion-item>
+                  <ion-label position="floating">Comfirm Password</ion-label>
+                  <ion-input type="password" [(ngModel)]="signUpform.confPassword"  name="comfirmpassword" #ComfirpassCtrl="ngModel" required></ion-input>
+                </ion-item>
+
+                <ion-item lines="none">
+
+                  <p class="tag text-danger" *ngIf="!ComfirpassCtrl.valid && ComfirpassCtrl.touched">Comfirm password field required.</p>
+
+                </ion-item>
+
+
+
+
+                <ion-label class="ion-float-md-end ion-padding-top mb">
+
+                  <div>
+
+                    <p class="ion-text-lg-capitalize"> <a routerLink="/login"> <span>already have account?</span> signin</a> </p>
+
+                  </div>
+
+                </ion-label>
+
+                <ion-col>
+                    <ion-button type="submit" color="primary" expand="block" [disabled]="!f.valid" (click)="signupUser()" >
+                      Sign Up
+                    </ion-button>
+                </ion-col>
+
+                    </form>
+                  </ion-card-content>
+                    </ion-card>
+
+
+              </ion-col>
+
+
+             </ion-row>
+
+
+
+    </ion-col>
+
+      </ion-row>
+      </ion-grid>
+      </ion-content>
+
+
+
+

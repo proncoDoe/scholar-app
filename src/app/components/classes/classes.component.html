@@ -1,0 +1,319 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="end">
+
+    <!-- <ion-menu-button menuId="m1"></ion-menu-button> -->
+
+    <ion-menu-button menuId="first"></ion-menu-button>
+
+    <!-- <ion-button (click)="onOpenMenu()">
+      Open
+    </ion-button> -->
+
+    </ion-buttons>
+
+    <ion-title>classes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content fxLayout="row">
+
+  <div class="ion-text-center ion-margin-top">
+
+
+    <ion-label class="ion-text-lg-capitalize" color="primary">
+          <h1>Courses</h1>
+
+        </ion-label>
+
+  </div>
+
+  <ion-grid>
+    <ion-row class="progress-bar-row">
+      <ion-col size-md="12">
+
+        <ion-row>
+
+
+          <ion-col size="10">
+
+
+       </ion-col>
+
+       <ion-col size="2" class="ion-padding-vertical">
+
+
+       </ion-col>
+
+       <ion-col size="2">
+
+        <br>
+
+
+         <ion-title>{{ progress }}%</ion-title>
+
+      </ion-col>
+
+          <ion-col size="8">
+
+
+               <ion-toolbar >
+
+                  <ion-progress-bar   value="0.7"   color="tertiary" [value]="progress" mode="determinate" buffer="0.7" (click)="onStop()" (dblclick)="onContnou()" class="ion-padding"></ion-progress-bar>
+
+                </ion-toolbar>
+
+          </ion-col>
+
+          <ion-col size="2">
+
+            <br>
+
+             <ion-title>45/100</ion-title>
+
+          </ion-col>
+
+
+        </ion-row>
+
+        <div class="ion-text-center ion-margin-top">
+
+
+          <ion-label class="ion-text-lg-capitalize" color="tertiary">
+                <h2>Progress</h2>
+
+              </ion-label>
+
+        </div>
+
+
+
+
+        <ion-row>
+
+          <ion-col size="10">
+
+            <ion-label class="ion-text-xl-uppercase ion-text-lg-uppercase ion-text-sm-capitalize ion-text-md-capitalize" color="tertiary">
+              <h2>goole drive</h2>
+
+            </ion-label>
+
+
+       </ion-col>
+
+       <ion-col size="2" class="ion-padding-vertical">
+
+         <ion-label class="ion-text-uppercase" color="tertiary">
+           <h2>completed</h2>
+
+         </ion-label>
+
+       </ion-col>
+
+
+        </ion-row>
+
+
+
+        <ion-row>
+
+          <ion-col size="12">
+
+            <ion-text >
+
+              <div class="container">
+
+                <p class="text-center font-weight-bold">Google drive is a file storage and sychronization service develop by Google Google Drive allow
+                  users to store files in cloud, sychronize files across devices, and share
+                </p>
+
+              </div>
+
+            </ion-text>
+
+          </ion-col>
+
+        </ion-row>
+
+
+        <ion-row>
+
+          <span>
+            <ion-list>
+                <ion-icon name="caret-forward-outline" color="warning"></ion-icon>
+            </ion-list>
+          </span>
+
+          <ion-col size="6">
+            <ion-title color="primary">
+              uploade and share files
+            </ion-title>
+          </ion-col>
+
+        </ion-row>
+
+        <ion-row>
+
+          <span>
+            <ion-list>
+                <ion-icon name="caret-forward-outline" color="warning"></ion-icon>
+            </ion-list>
+          </span>
+
+          <ion-col size="6">
+            <ion-title color="primary">
+              Access your files in Drive
+            </ion-title>
+          </ion-col>
+
+        </ion-row>
+
+        <ion-row>
+
+
+          <span>
+            <ion-list>
+                <ion-icon name="caret-forward-outline" color="warning"></ion-icon>
+            </ion-list>
+          </span>
+
+          <ion-col size="6">
+            <ion-title color="primary">
+             View and update files in Drive
+            </ion-title>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+
+          <span>
+            <ion-list>
+                <ion-icon name="caret-forward-outline" color="warning"></ion-icon>
+            </ion-list>
+          </span>
+
+          <ion-col size="6">
+            <ion-title color="primary">
+            Organize and search in Drive
+            </ion-title>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+
+          <ion-col size="8">
+
+          </ion-col>
+
+          <ion-col size="4">
+
+          <span>
+
+            <ion-button color="tertiary" class="ion-text-uppercase">
+              <ion-item routerLink="/faq" >
+                q & a
+               </ion-item>
+          </ion-button>
+
+          </span>
+
+          &nbsp; &nbsp;
+
+          <span>
+
+            <ion-button color="primary" class=" ion-text-uppercase">
+             <ion-item routerLink="/feedback" >
+              feedback
+             </ion-item>
+          </ion-button>
+
+          </span>
+
+
+          </ion-col>
+
+        </ion-row>
+
+
+        <ion-row>
+
+          <ion-col size="10">
+
+            <ion-label class="ion-text-xl-capitalize ion-text-lg-capitalize ion-text-sm-capitalize ion-text-md-capitalize" color="tertiary">
+              <h2>back-end-basic</h2>
+
+            </ion-label>
+
+
+       </ion-col>
+
+       <ion-col size="2" class="ion-padding-vertical">
+
+         <ion-label class="ion-text-uppercase" color="tertiary">
+           <h2>on-going</h2>
+
+         </ion-label>
+
+       </ion-col>
+
+
+        </ion-row>
+
+
+
+        <ion-row>
+
+          <ion-col size="12">
+
+            <ion-text >
+
+              <div class="container">
+
+                <p class="text-center font-weight-bold"> Back end Development refers to the server side langauge
+                  where you primarily focused on how the application works. This type of mobile Development or
+                  web Development usually consist of three parts a server, an application and database data structure
+
+                </p>
+
+              </div>
+
+            </ion-text>
+
+          </ion-col>
+
+        </ion-row>
+
+
+        <ion-row>
+
+          <span>
+            <ion-list>
+                <ion-icon name="caret-forward-outline" color="warning"></ion-icon>
+            </ion-list>
+          </span>
+
+          <ion-col size="6">
+            <ion-title color="primary">
+           Learn how to use Java
+            </ion-title>
+          </ion-col>
+        </ion-row>
+
+
+ </ion-col>
+  </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+
+
+
+
+
+

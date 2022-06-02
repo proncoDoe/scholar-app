@@ -1,0 +1,69 @@
+
+
+div ion-text{
+
+  color: var(--fadeOrange) !important;
+}
+
+
+.draw-down{
+
+  min-height: 35vh;
+}
+
+
+.ion-margin-top h2{
+
+  margin-top: 8rem !important;
+}
+
+
+
+
+.ion-margin-top div{
+
+  margin-top: 3rem !important;
+}
+
+
+ion-label div{
+
+ margin-bottom: .5rem;
+
+}
+
+
+ion-label p a{
+
+  list-style: none;
+  text-decoration: none;
+
+}
+
+
+
+ion-label p a span{
+
+color: #444;
+
+}
+
+
+.text-rate{
+
+  margin-left: 8.5rem !important;
+}
+
+
+@media(max-width:768px){
+
+.text-rate{
+
+  margin-left: .5rem !important;
+}
+
+}
+
+
+
+

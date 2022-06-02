@@ -1,0 +1,146 @@
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="3">
+
+
+
+        <ion-card>
+          <ion-card-content>
+
+
+            <ion-col >
+              <h1 color>Scholar Tracker</h1>
+            </ion-col>
+
+
+
+            <ion-col>
+              <h2 color>{{ isLogin ? title : scholarName }}</h2>
+            </ion-col>
+
+
+
+            <ion-col>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quisquam exercitationem obcaecati alias
+               dolorem? Consectetur totam voluptas voluptates assumenda? Error perferendis esse sequi nesciunt molestias
+               perspiciatis! Natus, repellendus blanditiis. Temporibus necessitatibus impedit voluptatem ullam nam enim illum
+               distinctio iste excepturi expedita sit qui recusandae repellendus ex voluptate adipisci, magnam quod.</p>
+            </ion-col>
+
+              <div class="draw-down"></div>
+
+              <ion-footer class=" ion-no-border">
+
+                <ion-item lines="none" button class="ion-padding-vertical">
+
+                  <ion-col>
+                    <h3 color>Get Started</h3>
+                    <span><a routerLink="/signup">No Account?  {{ isLogin ? 'Signup' : 'Signin' }} </a> </span>
+                  </ion-col>
+
+                </ion-item>
+            </ion-footer>
+
+          </ion-card-content>
+            </ion-card>
+
+
+      </ion-col>
+
+
+
+   <ion-col size-md="6">
+
+
+    <ion-row>
+
+      <ion-col size-md="9" offset-md="3">
+
+        <ion-card>
+
+          <div class="ion-text-center">
+
+            <ion-label class="ion-text-lg-capitalize" >
+
+                  <ion-avatar class="img-fluid img-thumbnail img rounded-circle">
+             <img src="../../../assets/images/avatar.png">
+              </ion-avatar>
+
+                </ion-label>
+
+          </div>
+
+
+
+          <div class="ion-text-center">
+
+
+            <ion-label class="ion-text-lg-capitalize" color="primary">
+                  <h1> {{ isLogin ? 'Login' : 'Signup' }}</h1>
+
+                </ion-label>
+
+          </div>
+
+
+          <ion-card-content>
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="signInform.email"  name="email" #emailCtrl="ngModel" required></ion-input>
+          <p class="tag  text-danger"  *ngIf="!emailCtrl.valid && emailCtrl.touched">Should be a valid email Address.</p>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="signInform.password"  name="password" #passwordCtrl="ngModel" minlength="6" required ></ion-input>
+
+          <p class="tag text-danger" *ngIf="!passwordCtrl.valid && passwordCtrl.touched">Password is not valid.</p>
+        </ion-item>
+
+
+        <ion-item lines="none">
+          <ion-label>Keep me in</ion-label>
+          <ion-checkbox type="checkbox" color="tertiary"  [(ngModel)]='signInform.check' name="check"  #check  value="keep me in" slot="start" required></ion-checkbox>
+        </ion-item>
+
+
+        <ion-label class="ion-float-md-end ion-padding-top mb">
+
+
+          <div>
+
+            <p class="ion-text-lg-capitalize"> <a routerLink="/passwordEmail">forgot password?</a> </p>
+
+          </div>
+
+        </ion-label>
+
+
+        <ion-col>
+            <ion-button type="submit"  color="primary"  expand="block" [disabled]="!f.valid" (click)="loginUser()" >
+
+              Login
+            </ion-button>
+        </ion-col>
+
+            </form>
+          </ion-card-content>
+            </ion-card>
+
+
+        </ion-col>
+    </ion-row>
+
+    </ion-col>
+
+      </ion-row>
+      </ion-grid>
+      </ion-content>
+
+

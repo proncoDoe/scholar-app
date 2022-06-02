@@ -1,0 +1,47 @@
+
+
+div ion-text{
+
+  color: var(--fadeOrange) !important;
+}
+
+.draw-down{
+
+  min-height: 200px;
+}
+
+
+
+ion-label p a{
+
+  list-style: none;
+  text-decoration: none;
+
+}
+
+
+a{
+
+  list-style: none;
+  text-decoration: none;
+  color: #f96d01 !important;
+
+}
+
+
+
+.img{
+
+  margin: auto 230px;
+}
+
+
+@media (max-width:678px) {
+
+
+  .img{
+
+    margin: auto 120px;
+  }
+
+}

@@ -1,0 +1,75 @@
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+
+   <ion-col size-md="6">
+
+
+    <ion-row>
+
+      <ion-col size-md="12" offsetSm="5">
+
+        <ion-card>
+
+          <div class="ion-text-center">
+
+            <ion-label class="ion-text-lg-capitalize" >
+
+                  <ion-avatar class="img-fluid img-thumbnail img rounded-circle">
+  <img src="../../../assets/images/avatar.png">
+</ion-avatar>
+
+                </ion-label>
+
+          </div>
+
+
+          <div class="ion-text-center">
+
+
+            <ion-label class="ion-text-lg-capitalize" color="primary">
+                  <h1>Password Recovering</h1>
+
+                </ion-label>
+
+          </div>
+
+
+          <ion-card-content>
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="passwordEmail.email"  name="email" #emailNameCtrl="ngModel" required></ion-input>
+        </ion-item>
+
+
+        <ion-item lines="none">
+
+          <p class="tag text-danger" *ngIf="!emailNameCtrl.valid && emailNameCtrl.touched">Should be a valid email address.</p>
+
+        </ion-item>
+
+        <ion-col>
+            <ion-button type="submit"  color="primary"  expand="block">
+              Recover
+            </ion-button>
+        </ion-col>
+
+            </form>
+          </ion-card-content>
+            </ion-card>
+
+
+        </ion-col>
+    </ion-row>
+
+    </ion-col>
+
+      </ion-row>
+      </ion-grid>
+      </ion-content>
+
+

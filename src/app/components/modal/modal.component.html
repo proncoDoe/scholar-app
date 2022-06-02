@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-capitalize">today</ion-title>
+    <ion-icon name='close-circle' slot="end" size="large" (click)='dismiss()' class="ion-padding" style='float: right; padding: 1rem; font-size: 30px; cursor: pointer;'></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="12">
+        <ion-card>
+          <ion-card-content>
+            </ion-card-content>
+            <ion-list>
+              <ion-item lines="none">
+               <ion-title class="ion-text-center ion-text-capitalize">task list curriculum</ion-title>
+              </ion-item>
+              </ion-list>
+            </ion-card>
+            </ion-col>
+            <ion-col size-md="12">
+              <ion-card>
+                  <ion-accordion-group>
+                    <ion-accordion value="colors">
+                      <ion-item slot="header">
+                        <ion-label class="ion-text-capitalize">task list</ion-label>
+                      </ion-item>
+
+                      <ion-list slot="content">
+                        <ion-item>
+                          <ion-card-content>
+
+                            <form (ngSubmit)='onSubmit(f)'  #f="ngForm">
+
+                              <ion-item>
+                                <ion-label position="floating">Add task</ion-label>
+                                <ion-input type="text"  [(ngModel)]="modalForm.task"   name="task" required></ion-input>
+                              </ion-item>
+
+                              <ion-row>
+                                <ion-col>
+
+                                  <ion-item lines="none">
+                                    <ion-label class="ion-text-capitalize">Maths</ion-label>
+                                  </ion-item>
+
+
+                                </ion-col>
+
+
+                                <ion-col>
+
+                                  <ion-item lines="none">
+                                    <ion-label class="ion-text-capitalize">Submited {{today | date:'fullDate'}}</ion-label>
+                                  </ion-item>
+
+
+                                </ion-col>
+
+                                <ion-col>
+                            <ion-item lines="none">
+                              <ion-label>Reminder</ion-label>
+                              <ion-checkbox type="checkbox"  color="tertiary" [(ngModel)]="modalForm.checkme"   name="checkme"  #checkme  value="reminder" slot="start" required></ion-checkbox>
+                            </ion-item>
+
+                                </ion-col>
+
+
+                            </ion-row>
+
+                              <ion-col>
+                                  <ion-button type="submit"  color="danger"  expand="block">
+                                    Submit
+                                  </ion-button>
+                              </ion-col>
+
+                                  </form>
+
+
+                          </ion-card-content>
+                        </ion-item>
+
+                      </ion-list>
+                    </ion-accordion>
+
+                  </ion-accordion-group>
+
+                  </ion-card>
+
+                  </ion-col>
+
+
+          </ion-row>
+
+        </ion-grid>
+     </ion-content>
+
+
+
+
+
+
+<!-- <ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../../assets/images/testimonial-author2.jpg"/>
+      </ion-avatar>
+      <ion-label>
+        <h2>Peter</h2>
+        <p>Hi! JavaTpoint is a best Tutorial WebSite.</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../../assets/images/avatar7.png"/>
+      </ion-avatar>
+      <ion-label>
+        <h2>Frodo</h2>
+        <p>Hi! This is a Great Ionic 4 Tutorial.</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../../assets/images/avatar.png"/>
+      </ion-avatar>
+      <ion-label>
+        <h2>Sam</h2>
+        <p>This is an example of Modal Controller.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content> -->
